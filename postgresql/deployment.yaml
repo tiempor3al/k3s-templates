@@ -1,3 +1,14 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: postgres-pvc
+spec:
+  accessModes:
+    # Kubernetes v1.29+
+    - ReadWriteOncePod
+  resources:
+    requests:
+      storage: 5Gi
 ---
 apiVersion: apps/v1
 kind: Deployment
