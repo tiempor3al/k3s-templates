@@ -38,7 +38,6 @@ metadata:
   annotations:
     cert-manager.io/cluster-issuer: "cloudflare-dns-issuer"
     traefik.ingress.kubernetes.io/router.entrypoints: "web,websecure"
-    traefik.ingress.kubernetes.io/router.middlewares: default-redirect-https@kubernetescrd
 spec:
   ingressClassName: traefik
   tls:
