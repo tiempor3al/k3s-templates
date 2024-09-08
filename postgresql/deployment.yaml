@@ -5,7 +5,7 @@ metadata:
 spec:
   accessModes:
     # Kubernetes v1.29+
-    - ReadWriteOncePod
+    - ReadWriteOnce
   resources:
     requests:
       storage: 5Gi
@@ -43,6 +43,7 @@ spec:
           volumeMounts:
             - mountPath: /var/lib/postgresql/data
               name: postgres-storage
+              subPath: postgres
       volumes:
         - name: postgres-storage
           persistentVolumeClaim:
