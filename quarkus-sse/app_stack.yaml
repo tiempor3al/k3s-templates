@@ -17,17 +17,6 @@ spec:
           image: tiempor3al/quarkus-kubernetes:v20240612-153928
           ports:
             - containerPort: 8080
-          env:
-            - name: AMQ_USER
-              valueFrom:
-                secretKeyRef:
-                  name: artemis-broker-credentials-secret
-                  key: AMQ_USER
-            - name: AMQ_PASSWORD
-              valueFrom:
-                secretKeyRef:
-                  name: artemis-broker-credentials-secret
-                  key: AMQ_PASSWORD
 ---
 apiVersion: v1
 kind: Service
