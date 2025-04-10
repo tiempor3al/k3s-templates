@@ -28,7 +28,7 @@ spec:
     app: quarkus-app
   ports:
     - protocol: TCP
-      port: 8080
+      port: 8000
       targetPort: 8080
 ---
 apiVersion: networking.k8s.io/v1
@@ -54,4 +54,4 @@ spec:
               service:
                 name: quarkus-service
                 port:
-                  number: 8080
+                  number: 8000
