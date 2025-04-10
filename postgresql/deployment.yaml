@@ -3,7 +3,6 @@ kind: PersistentVolumeClaim
 metadata:
   name: postgres-pvc
 spec:
-  storageClassName: standard
   accessModes:
     # Kubernetes v1.29+
     - ReadWriteOnce
