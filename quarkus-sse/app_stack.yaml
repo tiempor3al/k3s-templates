@@ -23,7 +23,7 @@ kind: Service
 metadata:
   name: quarkus-service
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: quarkus-app
   ports:
