@@ -36,7 +36,7 @@ kind: Ingress
 metadata:
   name: quarkus-ingress
   annotations:
-    cert-manager.io/cluster-issuer: "cloudflare-dns-issuer"
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
     traefik.ingress.kubernetes.io/router.entrypoints: "web,websecure"
 spec:
   ingressClassName: traefik
