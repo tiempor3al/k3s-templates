@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: quarkus-app
-          image: tiempor3al/quarkus-kubernetes:3cbcade847b54b5732e5461b47e5fd9264bf41db
+          image: tiempor3al/quarkus-kubernetes:495dcdbb11480c50a16e02a83620a57deea21c5f
           ports:
             - containerPort: 8080
 ---
