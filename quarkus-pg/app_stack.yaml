@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: quarkus-pg
-          image: tiempor3al/quarkus-pg:9d629ad05f43ac788520f30580f8cc8238051fcf
+          image: tiempor3al/quarkus-pg:347c27687e59f3326c0b477fc6fcfa990951827f
           ports:
             - containerPort: 8080
 ---
