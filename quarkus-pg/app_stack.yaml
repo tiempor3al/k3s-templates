@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: quarkus-pg
-          image: tiempor3al/quarkus-pg:347c27687e59f3326c0b477fc6fcfa990951827f
+          image: tiempor3al/quarkus-pg:3f0492acc86fdaf65bbbdc2d2122fcbb2e6acd04
           env:
             - name: POSTGRES_DB
               value: postgres_db
